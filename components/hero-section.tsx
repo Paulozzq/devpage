@@ -18,7 +18,7 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Transforma tu
                 <span className="text-emerald-600"> negocio </span>con 
-                <span className="ml-1 font-bold text-white animate-pulse bg-gradient-to-r from-emerald-400 via-lime-400 to-emerald-500 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(0,255,150,0.8)]">
+                <span className="ml-1 font-bold animate-pulse bg-gradient-to-r from-blue-700 via-cyan-500 to-sky-400 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(0,200,255,0.8)]">
                   DevPages
                 </span>
               </h1>
