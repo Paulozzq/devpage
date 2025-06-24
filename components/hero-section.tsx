@@ -17,8 +17,10 @@ export default function HeroSection() {
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Transforma tu
-                <span className="text-emerald-600"> negocio </span>
-                con nuestra solución
+                <span className="text-emerald-600"> negocio </span>con 
+                <span className="ml-1 font-bold text-white animate-pulse bg-gradient-to-r from-emerald-400 via-lime-400 to-emerald-500 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(0,255,150,0.8)]">
+                  DevPages
+                </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Descubre la plataforma que revolucionará la forma en que trabajas. Aumenta tu productividad, reduce

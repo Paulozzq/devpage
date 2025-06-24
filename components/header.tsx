@@ -23,9 +23,13 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-gray-900">
-              TuLogo
+          <div className="flex items-center max-w-full">
+            <Link href="/" className="block">
+              <img
+                src="/devpages_logo.png"
+                alt="DevPages Logo"
+                className="w-full max-w-[200px] h-auto"
+              />
             </Link>
           </div>
 

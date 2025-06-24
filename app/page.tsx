@@ -12,6 +12,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen">
       <Header />
+      <br />
       <main>
         <HeroSection />
         <FeaturesSection />
