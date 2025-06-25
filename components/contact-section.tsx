@@ -34,19 +34,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      content: "hola@tuempresa.com",
+      content: "contacto@devpages.com",
       description: "Respuesta en 24 horas",
     },
     {
       icon: Phone,
       title: "Teléfono",
-      content: "+1 (555) 123-4567",
+      content: "+51 906-740-999",
       description: "Lun - Vie, 9AM - 6PM",
     },
     {
       icon: MapPin,
       title: "Oficina",
-      content: "Ciudad de México, México",
+      content: "Lima, Perú",
       description: "Visítanos con cita previa",
     },
     {
@@ -63,7 +63,7 @@ export default function ContactSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">Contacto</span>
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Contacto</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">¿Listo para comenzar tu proyecto?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -138,7 +138,7 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
                     Enviar mensaje
                   </Button>
                 </form>
@@ -161,8 +161,8 @@ export default function ContactSection() {
                 <Card key={index} className="border-0 shadow-md">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <info.icon className="h-5 w-5 text-emerald-600" />
+                      <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <info.icon className="h-5 w-5 text-blue-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-1">{info.title}</h4>
@@ -176,11 +176,11 @@ export default function ContactSection() {
             </div>
 
             {/* CTA */}
-            <Card className="border-0 shadow-md bg-emerald-50">
+            <Card className="border-0 shadow-md bg-blue-50">
               <CardContent className="p-6 text-center">
                 <h4 className="font-semibold text-gray-900 mb-2">¿Prefieres una llamada?</h4>
                 <p className="text-gray-600 mb-4">Agenda una consulta gratuita de 30 minutos</p>
-                <Button variant="outline" className="bg-white text-emerald-700 border-emerald-200">
+                <Button variant="outline" className="bg-white text-blue-700 border-blue-200">
                   Agendar llamada
                 </Button>
               </CardContent>

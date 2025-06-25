@@ -9,28 +9,24 @@ export default function ServicesSection() {
       title: "Desarrollo Web",
       description: "Creamos sitios web y aplicaciones modernas, rápidas y escalables.",
       features: ["React & Next.js", "Backend robusto", "APIs RESTful", "Base de datos optimizada"],
-      price: "Desde $2,999",
     },
     {
       icon: Palette,
       title: "Diseño UX/UI",
       description: "Diseños atractivos y funcionales que convierten visitantes en clientes.",
       features: ["Investigación UX", "Prototipado", "Diseño responsive", "Testing de usabilidad"],
-      price: "Desde $1,499",
     },
     {
       icon: Megaphone,
       title: "Marketing Digital",
       description: "Estrategias integrales para hacer crecer tu presencia online.",
       features: ["SEO/SEM", "Redes sociales", "Email marketing", "Analytics"],
-      price: "Desde $899/mes",
     },
     {
       icon: TrendingUp,
       title: "Consultoría",
       description: "Asesoramiento estratégico para optimizar tus procesos digitales.",
       features: ["Auditoría digital", "Estrategia tecnológica", "Transformación digital", "Capacitación"],
-      price: "Desde $199/hora",
     },
   ]
 
@@ -40,7 +36,7 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
               Nuestros Servicios
             </span>
           </div>
@@ -55,8 +51,8 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="h-8 w-8 text-emerald-600" />
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <service.icon className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
               </CardHeader>
@@ -66,26 +62,22 @@ export default function ServicesSection() {
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="text-sm text-gray-600 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-emerald-600 rounded-full mr-2"></div>
+                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
-
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="text-center mb-4">
-                    <span className="text-2xl font-bold text-emerald-600">{service.price}</span>
-                  </div>
-                  <Button
-                    variant="outline"
-                    className="w-full bg-white text-gray-700 border-gray-300 hover:bg-emerald-50"
-                  >
-                    Más información
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <p className="text-lg text-gray-600 mb-6">¿Listo para transformar tu negocio digital?</p>
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <a href="#pricing">Ver nuestros planes</a>
+          </Button>
         </div>
       </div>
     </section>

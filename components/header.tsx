@@ -13,7 +13,6 @@ export default function Header() {
     { name: "Características", href: "#features" },
     { name: "Acerca de", href: "#about" },
     { name: "Servicios", href: "#services" },
-    { name: "Testimonios", href: "#testimonials" },
     { name: "Precios", href: "#pricing" },
     { name: "Contacto", href: "#contact" },
   ]
@@ -44,7 +43,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button className="bg-emerald-600 hover:bg-emerald-700">Comenzar Ahora</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700">Comenzar Ahora</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -69,7 +68,7 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-emerald-600 hover:bg-emerald-700 w-full mt-4">Comenzar Ahora</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700 w-full mt-4">Comenzar Ahora</Button>
             </nav>
           </div>
         )}

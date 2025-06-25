@@ -7,8 +7,7 @@ export default function Footer() {
       { name: "Acerca de", href: "#about" },
       { name: "Servicios", href: "#services" },
       { name: "Equipo", href: "#" },
-      { name: "Carreras", href: "#" },
-      { name: "Noticias", href: "#" },
+      
     ],
     support: [
       { name: "Centro de ayuda", href: "#" },
@@ -41,7 +40,11 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Link href="/" className="text-2xl font-bold">
-                TuLogo
+                <img
+                src="/devpages_logo.png"
+                alt="DevPages Logo"
+                className="w-full max-w-[200px] h-auto"
+              />
               </Link>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -53,7 +56,7 @@ export default function Footer() {
                 <Link
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
                 >
                   <social.icon className="h-5 w-5" />
                 </Link>
@@ -118,11 +121,11 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder="tu@email.com"
-                    className="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
               </div>
-              <button className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-medium transition-colors">
+              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors">
                 Suscribirse
               </button>
             </div>
@@ -131,8 +134,8 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2024 TuEmpresa. Todos los derechos reservados.</p>
-          <p className="text-gray-400 text-sm mt-4 md:mt-0">Hecho con ❤️ en México</p>
+          <p className="text-gray-400 text-sm">© 2024 DevPages. Todos los derechos reservados.</p>
+          <p className="text-gray-400 text-sm mt-4 md:mt-0">Hecho con ❤️ en Perú  </p>
         </div>
       </div>
     </footer>

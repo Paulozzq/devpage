@@ -41,7 +41,7 @@ export default function FeaturesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
               Características
             </span>
           </div>
@@ -57,8 +57,8 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6">
-                  <feature.icon className="h-6 w-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                  <feature.icon className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
